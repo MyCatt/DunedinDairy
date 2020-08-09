@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Dunedin Dairy</title>
+  <meta name="description" content="Dunedin Dairy">
+  <meta name="author" content="Michael Catterall">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+    <nav id="main_nav">
+        <img src="http://redsox.uoa.auckland.ac.nz/ds/logo.svg" id="main_nav--logo">
+        <ul>
+            <li onClick="changePage(0)">Home</li>
+            <li onClick="changePage(1)">Products</li>
+            <li onClick="changePage(2)">Location</li>
+            <li onClick="changePage(3)">Guest Book</li>
+            <li onClick="changePage(4)">News</li>
+        </ul>
+    </nav>
+    <section id="main_viewable">
+        <div id="main_banner">
+            <div id="main_banner--content">
+                <div id="main_banner--middle">
+                    <div>
+                        <h1>Dunedin Dairy</h1>
+                        <h5>We have been keeping kiwi's healthy for over 100 years!</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main id="home_page">
+            <section class="pic_content_pair left">
+                <img src="https://images.unsplash.com/photo-1590703690900-5bf7b981057e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2552&q=80">
+                <div class="content_card">
+                    <div class="content_card--center">
+                        <h3>Our Story</h3>
+                        <p>Since 1903 Dunedin Dairy has been New Zealand's number one distrubtor of dairy products. Proudly kiwi owed we price ourselves on delivery organic dairy products from hand fed cattle raised on our thousands of acreage</p>
+                        <button>Browse our range</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </section>
+    <main id="products_page">
+        <div id="product_filter">
+            <input id="search_product" type="text" placeholder="Find a product">
+        </div>
+        <div id="product_group">
+        </div>
+    </main>
+    <main id="location_page">
+        <div id="details_grid">
+            <div id="details_content">
+                <h3>About Us</h3>
+                <div id="contact_details">
+
+                </div>
+            </div>
+            <img id="details_map" src="http://redsox.uoa.auckland.ac.nz/ds/map.png">
+        </div>
+    </main>
+    <main id="guest_book">
+        <h2>Sign our guestbook</h2>
+        <p>We love to see where our visitors are from!</p>
+        <form id="comment_form">
+            <input id="guest_username" type="text" placeholder="Username">
+            <br/>
+            <textarea id="guest_comment_box" name="comment" type="text" placeholder="Comments"></textarea>
+            <br>
+            <input id="comment_submit" type="submit" value="Submit">
+        </form>
+        <div id="comment_section">
+
+        </div>
+    </main>
+    <main id="news_page">
+        <h2>Recent news</h2>
+    </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
